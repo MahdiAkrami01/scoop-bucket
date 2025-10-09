@@ -9,6 +9,9 @@ Custom Bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
 
 ```pwsh
 scoop bucket add akrami https://github.com/MahdiAkrami01/scoop-bucket
+```
+
+```pwsh
 scoop install akrami/thorium-avx2
 ```
 
