@@ -17,6 +17,18 @@ scoop bucket add akrami https://github.com/MahdiAkrami01/scoop-bucket
 scoop bucket rm akrami
 ```
 
+## 🚀 How to fix the Scoop slow download problem?
+
+```pwsh
+scoop install aria2
+```
+
+```pwsh
+scoop config aria2-warning-enabled false
+scoop config aria2-split 16
+scoop config aria2-max-connection-per-server 16
+```
+
 ## 📱 Avaiable apps
 
 - Thorium Browser ([install](docs/thorium.md))
