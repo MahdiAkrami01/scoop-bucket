@@ -19,7 +19,10 @@ scoop install akrami/thorium-avx2
 scoop install akrami/portable-registrator
 ```
 
-Add `PortableRegistrator` config:
+Add `Portable Registrator` config:
+
+<img width="1108" height="607" alt="image" src="https://github.com/user-attachments/assets/dec6d0fd-918a-4650-8b81-632cdb8505ce" />
+
 ```
     <AppType>
       <Name>Thorium Web-Browser</Name>
