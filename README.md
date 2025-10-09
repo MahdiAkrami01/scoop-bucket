@@ -13,6 +13,11 @@ After manifests have been committed and pushed, run the following:
 scoop bucket add akrami https://github.com/MahdiAkrami01/scoop-bucket
 scoop install akrami/thorium-avx2
 ```
+## How do I Uninstall this bucket?
+
+```pwsh
+scoop bucket rm akrami
+```
 
 ## How do I contribute new manifests?
 
