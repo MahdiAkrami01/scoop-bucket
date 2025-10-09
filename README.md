@@ -11,6 +11,7 @@ Custom Bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
 scoop bucket add akrami https://github.com/MahdiAkrami01/scoop-bucket
 scoop install akrami/thorium-avx2
 ```
+
 ## 🗑 How do I Uninstall?
 
 ```pwsh
