@@ -39,11 +39,13 @@ Add this to the end of `Portable Registrator` config:
     </AppType>
 ```
 
-<img width="1108" height="607" alt="image" src="https://github.com/user-attachments/assets/dec6d0fd-918a-4650-8b81-632cdb8505ce" />
+<img width="1119" height="652" alt="image" src="https://github.com/user-attachments/assets/b48a5b06-c410-4e4c-91c6-15c2eed4580b" />
 
 # How to Make Thorium the Default Browser
 
-Go to "Default apps" by [clicking here](ms-settings:defaultapps?registeredAppMachine=Thorium%20Portable), and then click "Set default."
+- Press `Win+R` to open `Run`.
+- Type `ms-settings:defaultapps?registeredAppMachine=Thorium%20Portable` and press Enter.
+- Click "Set default".
 
 <img width="1436" height="825" alt="image" src="https://github.com/user-attachments/assets/8fa613cf-22d8-444a-b32c-19b8b0f3eb7e" />
 
