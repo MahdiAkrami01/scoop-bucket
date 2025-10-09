@@ -38,9 +38,9 @@
         "php.exe",
         "php-cgi.exe",
         "phpdbg.exe",
-        ["php-wrapper.cmd", "php84"],
-        ["php-wrapper.cmd", "php84-cgi"],
-        ["php-wrapper.cmd", "php84dbg"]
+        ["php-wrapper.cmd", "php74"],
+        ["php-wrapper.cmd", "php74-cgi"],
+        ["php-wrapper.cmd", "php74dbg"]
     ],
     "persist": [
         "cli",
