@@ -14,7 +14,7 @@ REM =======================================================
 
 REM Set the isolated PHP config directories for this version.
 REM Uses %~dp0 to reliably point to the current installation directory ($dir).
-SET PHP_INI_SCAN_DIR=%~dp0\cli;%~dp0\cli\conf.d
+SET PHP_INI_SCAN_DIR=%~dp0cli;%~dp0cli\conf.d
 
 REM Get the command used to call this script (e.g., 'php84', 'php84-cgi')
 FOR %%I IN ("%0") DO SET "CALLER_NAME=%%~nI"
