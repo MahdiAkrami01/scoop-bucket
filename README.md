@@ -19,8 +19,8 @@ scoop install akrami/thorium-avx2
 scoop install akrami/portable-registrator
 ```
 
-Add `PortableRegistrator` config
-``
+Add `PortableRegistrator` config:
+```
     <AppType>
       <Name>Thorium Web-Browser</Name>
       <OpenParameters>--user-data-dir="%USERPROFILE%\scoop\apps\thorium-avx2\current\User Data" --silent-debugger-extension-api -url "%1"</OpenParameters>
