@@ -5,7 +5,7 @@ scoop install akrami/thorium-avx2
 ```
 
 > ⚠️
-> 
+>
 >  I use `--silent-debugger-extension-api` flag to suppress the warning popup that some extensions cause, such as user-agent extensions.
 >
 > If you do not want this, you can remove it from the [manifest](bucket/thorium-avx2.json) and the `Portable Registrator` configuration.
