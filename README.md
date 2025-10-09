@@ -5,54 +5,19 @@
 
 Custom Bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
 
-## ✅ How do I install?
+## ✅ How to add this bucket?
 
 ```pwsh
 scoop bucket add akrami https://github.com/MahdiAkrami01/scoop-bucket
 ```
 
-```pwsh
-scoop install akrami/thorium-avx2
-```
-
-```pwsh
-scoop install akrami/portable-registrator
-```
-
-Add `Portable Registrator` config:
-
-<img width="1108" height="607" alt="image" src="https://github.com/user-attachments/assets/dec6d0fd-918a-4650-8b81-632cdb8505ce" />
-
-```
-    <AppType>
-      <Name>Thorium Web-Browser</Name>
-      <OpenParameters>--user-data-dir="%USERPROFILE%\scoop\apps\thorium-avx2\current\User Data" --silent-debugger-extension-api -url "%1"</OpenParameters>
-      <FileAssociations>
-        <string>.svg</string>
-        <string>.pdf</string>
-        <string>.htm</string>
-        <string>.html</string>
-        <string>.shtml</string>
-        <string>.xht</string>
-        <string>.xhtml</string>
-      </FileAssociations>
-      <URLAssociations>
-        <string>http</string>
-        <string>https</string>
-        <string>ftp</string>
-      </URLAssociations>
-    </AppType>
-```
-
-## 🗑 How do I Uninstall?
+## 🗑 How to remove this bucket?
 
 ```pwsh
 scoop bucket rm akrami
 ```
 
-## 🧑‍💻 How do I contribute new manifests?
+## 📱 Avaiable apps
 
-To make a new manifest contribution, please read the [Contributing
-Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md)
-and [App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests)
-wiki page.
+- Thorium Browser ([install](docs/thorium.md))
+- PHP Multiple Versions ([install](docs/php.md))
