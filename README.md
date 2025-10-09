@@ -15,6 +15,32 @@ scoop bucket add akrami https://github.com/MahdiAkrami01/scoop-bucket
 scoop install akrami/thorium-avx2
 ```
 
+```pwsh
+scoop install akrami/portable-registrator
+```
+
+Add `PortableRegistrator` config
+``
+    <AppType>
+      <Name>Thorium Web-Browser</Name>
+      <OpenParameters>--user-data-dir="%USERPROFILE%\scoop\apps\thorium-avx2\current\User Data" --silent-debugger-extension-api -url "%1"</OpenParameters>
+      <FileAssociations>
+        <string>.svg</string>
+        <string>.pdf</string>
+        <string>.htm</string>
+        <string>.html</string>
+        <string>.shtml</string>
+        <string>.xht</string>
+        <string>.xhtml</string>
+      </FileAssociations>
+      <URLAssociations>
+        <string>http</string>
+        <string>https</string>
+        <string>ftp</string>
+      </URLAssociations>
+    </AppType>
+```
+
 ## 🗑 How do I Uninstall?
 
 ```pwsh
