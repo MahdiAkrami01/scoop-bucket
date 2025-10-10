@@ -34,8 +34,8 @@
         "        Set-Content -Path $reg_file_out -Value $content -Encoding Ascii",
         "    }",
         "}",
-        "if (-not (Test-Path \"$persist_dir\\.gitconfig\")) {",
-        "    New-Item -Path \"$persist_dir\\.gitconfig\" -ItemType File -Value \"{}\" | Out-Null",
+        "if (-not (Test-Path \"$persist_dir\\config\\.gitconfig\")) {",
+        "    New-Item -Path \"$persist_dir\\config\\.gitconfig\" -ItemType File -Value \"{}\" | Out-Null",
         "}"
     ],
     "bin": [
@@ -61,10 +61,10 @@
     ],
     "env_set": {
         "GIT_INSTALL_ROOT": "$dir",
-        "GIT_CONFIG_GLOBAL": "$dir\\.gitconfig",
+        "GIT_CONFIG_GLOBAL": "$dir\\config\\.gitconfig",
     },
     "persist": [
-        ".gitconfig"
+        "config"
     ],
     "checkver": {
         "url": "https://api.github.com/repositories/23216272/releases/latest",
