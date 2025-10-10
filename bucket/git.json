@@ -58,7 +58,7 @@
     ],
     "env_set": {
         "GIT_INSTALL_ROOT": "$dir",
-        "GIT_CONFIG_GLOBAL": "$persist_dir\.gitconfig",
+        "GIT_CONFIG_GLOBAL": "$persist_dir\\.gitconfig",
     },
     "persist": [
         ".gitconfig"
