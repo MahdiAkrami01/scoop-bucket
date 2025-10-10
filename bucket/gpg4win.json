@@ -15,7 +15,7 @@
         "Gpg4win\\bin"
     ],
     "env_set": {
-        "GNUPGHOME ": "$dir\\data"
+        "GNUPGHOME ": "$persist_dir\\data"
     },
     "persist": [
         "data"
