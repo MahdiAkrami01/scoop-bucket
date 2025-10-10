@@ -33,6 +33,9 @@
         "        }",
         "        Set-Content -Path $reg_file_out -Value $content -Encoding Ascii",
         "    }",
+        "}",
+        "if (-not (Test-Path \"$persist_dir\\.gitconfig\")) {",
+        "    New-Item -Path \"$persist_dir\\.gitconfig\" -ItemType File -Value \"{}\" | Out-Null",
         "}"
     ],
     "bin": [
@@ -58,7 +61,7 @@
     ],
     "env_set": {
         "GIT_INSTALL_ROOT": "$dir",
-        "GIT_CONFIG_GLOBAL": "$persist_dir\\.gitconfig",
+        "GIT_CONFIG_GLOBAL": "$dir\\.gitconfig",
     },
     "persist": [
         ".gitconfig"
