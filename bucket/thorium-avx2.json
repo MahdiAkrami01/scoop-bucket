@@ -18,7 +18,7 @@
     ],
     "shortcuts": [
         [
-            "$scoopdir\\shims\\thorium.exe",
+            "thorium.exe",
             "Thorium",
             "--user-data-dir=\"$dir\\User Data\" --silent-debugger-extension-api"
         ]
