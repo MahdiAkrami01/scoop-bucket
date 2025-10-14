@@ -30,7 +30,7 @@
         "}"
     ],
     "env_set": {
-        "CHROME_EXECUTABLE": "$dir\\thorium.exe"
+        "CHROME_EXECUTABLE": "$shim\\thorium.exe"
     },
     "persist": "User Data",
     "checkver": {
