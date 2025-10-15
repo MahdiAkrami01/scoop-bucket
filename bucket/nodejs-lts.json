@@ -38,8 +38,8 @@
         "pnpm-home"
     ],
     "env_set": {
-        "COREPACK_HOME": "$persist_dir\\corepack-home",
-        "PNPM_HOME": "$persist_dir\\pnpm-home"
+        "COREPACK_HOME": "$dir\\corepack-home",
+        "PNPM_HOME": "$dir\\pnpm-home"
     },
     "persist": [
         "bin",
