@@ -36,12 +36,12 @@
         "."
     ],
     "env_set": {
-        "COREPACK_HOME": "$persist_dir\\corepack"
+        "COREPACK_HOME": "$persist_dir\\corepack-home"
     },
     "persist": [
         "bin",
         "cache",
-        "corepack"
+        "corepack-home"
     ],
     "checkver": {
         "url": "https://nodejs.org/dist/index.json",
