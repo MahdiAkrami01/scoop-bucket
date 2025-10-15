@@ -1,0 +1,70 @@
+{
+    "version": "22.20.0",
+    "description": "As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. (Long Term Support)",
+    "homepage": "https://nodejs.org",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://nodejs.org/dist/v22.20.0/node-v22.20.0-win-x64.7z",
+            "hash": "a49bc0e03dea2c57941f9d473223c0f23943f225b97fde1037800a9f146f7c19",
+            "extract_dir": "node-v22.20.0-win-x64"
+        },
+        "32bit": {
+            "url": "https://nodejs.org/dist/v22.20.0/node-v22.20.0-win-x86.7z",
+            "hash": "c0987f04eb9df214ecdd4ec606170350901b4b47e223e7549332f327355c75e5",
+            "extract_dir": "node-v22.20.0-win-x86"
+        },
+        "arm64": {
+            "url": "https://nodejs.org/dist/v22.20.0/node-v22.20.0-win-arm64.7z",
+            "hash": "01ccc1b2781e5c399b88299062baa1c88d41bf33e79dfb4657c8e333de7d2290",
+            "extract_dir": "node-v22.20.0-win-arm64"
+        }
+    },
+    "post_install": [
+        "# Set npm prefix to install modules inside bin and npm cache so they persist",
+        "Set-Content -Value \"prefix=$persist_dir\\bin`ncache=$persist_dir\\cache\" -Path \"$dir\\node_modules\\npm\\npmrc\"",
+
+        "# Remove Default Corepack binaries",
+        "Remove-Item -Path \"$dir\\corepack\"",
+        "Remove-Item -Path \"$dir\\corepack.cmd\"",
+
+        "# Install Corepack",
+        "npm install -g corepack"
+    ],
+    "env_add_path": [
+        "bin",
+        "."
+    ],
+    "env_set": {
+        "COREPACK_HOME": "$persist_dir\\corepack"
+    },
+    "persist": [
+        "bin",
+        "cache",
+        "corepack"
+    ],
+    "checkver": {
+        "url": "https://nodejs.org/dist/index.json",
+        "jsonpath": "$..[?(@.lts != false)].version",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://nodejs.org/dist/v$version/node-v$version-win-x64.7z",
+                "extract_dir": "node-v$version-win-x64"
+            },
+            "32bit": {
+                "url": "https://nodejs.org/dist/v$version/node-v$version-win-x86.7z",
+                "extract_dir": "node-v$version-win-x86"
+            },
+            "arm64": {
+                "url": "https://nodejs.org/dist/v$version/node-v$version-win-arm64.7z",
+                "extract_dir": "node-v$version-win-arm64"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHASUMS256.txt.asc"
+        }
+    }
+}
