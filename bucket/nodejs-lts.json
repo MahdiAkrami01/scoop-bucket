@@ -27,7 +27,7 @@
         "# Remove Default Corepack binaries",
         "Remove-Item -Path \"$dir\\corepack\"",
         "Remove-Item -Path \"$dir\\corepack.cmd\"",
-        "Remove-Item -Path \"$dir\\node_modules\\corepack" -Recurse -Force"
+        "Remove-Item -Path \"$dir\\node_modules\\corepack" -Recurse -Force",
         
         "# Install Corepack",
         "npm install -g corepack"
