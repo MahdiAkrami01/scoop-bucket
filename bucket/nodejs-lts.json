@@ -34,7 +34,8 @@
     ],
     "env_add_path": [
         "bin",
-        "."
+        ".",
+        "pnpm-home"
     ],
     "env_set": {
         "COREPACK_HOME": "$persist_dir\\corepack-home",
