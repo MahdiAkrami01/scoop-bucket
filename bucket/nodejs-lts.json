@@ -37,12 +37,14 @@
         "."
     ],
     "env_set": {
-        "COREPACK_HOME": "$persist_dir\\corepack-home"
+        "COREPACK_HOME": "$persist_dir\\corepack-home",
+        "PNPM_HOME": "$persist_dir\\pnpm-home"
     },
     "persist": [
         "bin",
         "cache",
-        "corepack-home"
+        "corepack-home",
+        "pnpm-home"
     ],
     "checkver": {
         "url": "https://nodejs.org/dist/index.json",
